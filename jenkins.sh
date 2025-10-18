@@ -1,41 +1,42 @@
 #!/bin/bash
 
 # Update all system packages
-yum update -y
+sudo yum update -y
 
 # Add Jenkins repository to yum
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 # Import Jenkins GPG key
-rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
 # Upgrade packages
-yum upgrade -y
+sudo yum upgrade -y
 
 # Install Java 17 (required by Jenkins)
-yum install java-17-amazon-corretto -y
+sudo yum install java-17-amazon-corretto -y
 
 # Install Jenkins
-yum install jenkins -y
+sudo yum install jenkins -y
 
 # Enable and start Jenkins service
-systemctl enable jenkins
-systemctl start jenkins
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
 
 # Install Docker
-yum install docker -y
+sudo yum install docker -y
 
 # Start Docker service
-systemctl start docker
+sudo systemctl start docker
+sudo systemctl enable docker
 
 # Add Jenkins user to Docker group to allow Docker command usage
-gpasswd -a jenkins docker
+sudo gpasswd -a jenkins docker
 
 # Install Git
-yum install git -y
+sudo yum install git -y
 
 # Install pip for Python 3
-yum install python3-pip -y
+sudo yum install python3-pip -y
 
 # Install Flask and Pytest using pip
 pip3 install flask pytest

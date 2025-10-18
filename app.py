@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return '<h1 style="color:green;">Welcome to My Flask Application Home Page ! ! !</h1>'
+    return '<h1 style="color:green;">Welcome to My Flask Application Home Page</h1>'
 
 @app.route("/info")
 def srtechopsinfo():
-    return '<h1 style="color:violet;">****Welcome to SURESHKUMAR DevOps Class---Thank You!</h1>'
+    return '<h1 style="color:violet;">****Welcome to SURESHKUMAR DevOps Class---Thank You</h1>'
 
 @app.route("/contact")
 def srtechopsmobilenumber():

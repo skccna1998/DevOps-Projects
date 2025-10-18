@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return '<h1 style="color:green;">Welcome to My Flask Application Home Page</h1>'
+    return '<h1 style="color:green;">Welcome to My Flask Application Home Page ! ! !</h1>'
 
 @app.route("/info")
 def srtechopsinfo():
@@ -13,7 +13,7 @@ def srtechopsinfo():
 
 @app.route("/contact")
 def srtechopsmobilenumber():
-    return  '<h1 style="color:red;">FOR TRAINING ENQUIRY: +91 9688023053 AND +91 8903839942</h1>'
+    return  '<h1 style="color:red;">FOR TRAINING ENQUIRY: +91 9688023053</h1>'
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

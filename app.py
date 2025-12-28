@@ -13,7 +13,7 @@ def srtechopsinfo():
 
 @app.route("/contact")
 def srtechopsmobilenumber():
-    return  '<h1 style="color:red;">FOR TRAINING ENQUIRY: +91 9688023053</h1>'
+    return  '<h1 style="color:red;">TRAINING ENQUIRY: +91 9688023053</h1>'
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

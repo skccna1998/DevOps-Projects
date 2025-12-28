@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return '<h1 style="color:green;">Welcome to My Flask Application Home Page</h1>'
+    return '<h1 style="color:green;">Welcome to the Home Page</h1>'
 
 @app.route("/info")
 def srtechopsinfo():

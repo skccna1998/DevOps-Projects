@@ -8,11 +8,11 @@ def home():
     return '<h1 style="color:green;">Welcome to My Flask Application Home Page</h1>'
 
 @app.route("/info")
-def srtechopsinfo():
+def sktechopsinfo():
     return '<h1 style="color:violet;">****Welcome to SURESHKUMAR DevOps Class---Thank You</h1>'
 
 @app.route("/contact")
-def srtechopsmobilenumber():
+def sktechopsmobilenumber():
     return  '<h1 style="color:red;">FOR TRAINING ENQUIRY: +91 9688023053</h1>'
 
 if __name__ == "__main__":

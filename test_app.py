@@ -1,4 +1,4 @@
-from app import srtechopsmobilenumber
+from app import sktechopsmobilenumber
 
-def test_srtechopsmobilenumber():
-    assert srtechopsmobilenumber() == '<h1 style="color:red;">FOR TRAINING ENQUIRY: +91 9688023053</h1>'
+def test_sktechopsmobilenumber():
+    assert sktechopsmobilenumber() == '<h1 style="color:red;">FOR TRAINING ENQUIRY: +91 9688023053</h1>'
